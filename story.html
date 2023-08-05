@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lucky's Baked Goods</title>
+    <link rel="icon" type="image/x-icon" href="mp2images/favicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--BS5 CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--BS Icon CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   
+
+
+<style>
+body{
+    background-image: linear-gradient(360deg, #fcfced, #fcedfc 38%, #ebf6ff) ;
+}
+
+.nav-link {
+    color: black;
+    font-size: large;
+}
+.navbar .container{
+    gap: 1rem;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navbar-nav .nav-link {
+    padding-left: 0px
+}
+.navbar .navbar-nav .nav-link::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: #65BDC7;
+  margin: auto;
+  display: block;
+}
+
+.navbar .navbar-nav .nav-link:hover::after {
+  width: 100%;
+  transition: width 0.1s linear;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #65BDC7;
+}
+
+.col-2:hover {
+padding-top: .25rem;
+
+}
+
+.item {
+    background-color: #DCE0E1;
+    box-shadow: 0 15px 10px #757676; 
+    padding: 7%;
+}
+
+.title {
+    font-size: smaller;
+}
+
+/*About*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    
+}
+
+.row-wrapper{
+    width: 100%;
+    padding: 100px 100px;
+}
+
+.about-section{
+    width: 30%;
+    float: left;
+}
+
+.about-section img{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+} 
+
+.aboutcontent {
+    width: 50%;
+    float: left;
+    margin-left: 30px;
+}
+
+.aboutcontent h2{
+    font-size: large;
+    color: #b60112;
+}
+
+.aboutcontent p{
+    font-size: medium;
+    margin-top: 10px;
+    line-height: 1.5;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px){
+    .about-section{
+        width: 100%;
+        float: none;
+    }
+    .aboutcontent {
+        width: 100%;
+        float: none;
+        margin-left: 0px;
+}
+
+.aboutcontent h2{
+    font-style: 30px;
+}
+
+.aboutcontent p{
+    font-size: 18px;
+
+}
+}
+
+a.active {
+    font-weight: bold;
+    border-top: 3px solid black;
+    
+}
+.contactUsBtn{
+    padding-bottom: 100px;
+}
+.contactUsBtn input{
+    padding: 10px 25px; 
+    border-radius: 50px;
+    font-size: large;
+    box-shadow: 0 0 5px #65BDC7; 
+    
+}
+.data-bs-title{
+    background-color: #b60112;
+    
+}
+
+</style>
+
+</head>
+
+
+<body>
+<!--Header Navigation-->
+<nav class="navbar fixed-top navbar-expand-xl " style="background-color: white;">
+   
+        <div class="navbar container px-5"  >
+            <a class="navbar-brand "  href="index.html">
+                <img src="mp2images/headerlogomx.gif" alt="Lucky's logo" height="80" width="300" class="">
+           </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarShop" aria-controls="navbarShop" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarShop">
+                <div class="navbar-nav ms-auto">
+                    
+                    <a class="nav-link px-4 " href="index.html">HOME</a>
+                    <a  class="nav-link px-4" href="menu.html">MENU</a>
+                    <a class="nav-link px-4" href="orderonline.html">ORDER ONLINE</a>
+                     <a class="nav-link px-4 active" href="story.html">STORY</a>
+                          
+                    
+                </div>
+               
+            </div>
+        </div>
+    
+</nav>
+<br><br><br><br>
+
+
+<section style="background-image: url('mp2images/storybg_.png');background-repeat: no-repeat;
+background-attachment: fixed; background-size: cover; min-height: 150px; font-weight: 400; ">
+   
+
+
+<div class="wrapper">
+    
+    <div class="row-wrapper">
+        <div class="about-section">
+            <img src="mp2images/meetlucky.jpg" alt="">
+        </div>
+        <div class="aboutcontent">
+           
+            <h2 >Meet Lucky, Our Resident Baker</h2>
+            <p>
+                A.k.a Yen, was born and raised in Ilocos Sur. She enjoys traveling with her family and takes photos of them, but if you check her profile, she also loves taking photos of her friends and mother nature. Not many know that she has a natural talent in cooking local "ulam" dishes.
+                <br><br>
+                Baking is not her first love.  
+                She graduated in Far Eastern University and got her license as a Nurse. 
+                But after working briefly in the hospital, she decided, it's time to move on. It's not too long ago, when she started her own journey towards personal development and found happines in baking.
+                Trained and dedicated most of her time in making recipes since 2020 before sharing her freshly baked products to the public. 
+                <br><br>
+                That's how Lucky's Baked Goods was born. It is a start-up business that bakes cakes, cheesecakes, cupcakes, bread, and cookies fresh from home. Tried and tested by her family, friends and the neighborhood.
+                <br><br>
+                "Great things start from small beginnings."
+            </p>
+
+        </div>
+        
+    </div>
+</div>
+<div class="contactUsBtn text-center">
+    <input type="button" id="contactUsPopover" value="Contact Us" class="btn btn-danger fw-bold"
+    data-bs-toggle="popover" data-bs-placement="right" data-bs-title="We want to hear from you" >
+      
+</div>
+
+<div id="popoverContainer" style="display: none;">
+    <form class="text-center " id="contactUsForm" action="https://formsubmit.co/luckysbakedgoods@gmail.com" method="POST">
+                        
+        <input id="fname" name="fname" type="text" placeholder="Name (optional)" style="width: 100%;"> 
+        <input id="email" name="email" type="email" placeholder="Email" required style="width: 100%;">
+        <input id="phonenumber" name="phonenumber" type ="text" placeholder="Mobile" style="width: 100%;">
+        <textarea name="feedback" id="feedback" rows="2" placeholder="Message..." class="mt-2" required style="width: 100%;"></textarea>
+       
+        <div>
+            <input type="submit" value="Submit" id="" class="btn btn-sm btn-info mt-3 ">
+            <input type="hidden" name="_next" value="https://g33line.github.io/Luckys-Baked-Goods/index.html">
+            <input type="hidden" name="_autoresponse" value="Thanks for your message!">
+        </div>
+    </form>
+</div>
+
+<script>
+    // Initialize the popover when the document is ready
+    document.addEventListener('DOMContentLoaded', function () {
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl, {
+          html: true,
+          content: function () {
+            // Clone the form and append it to the popover container
+            var formClone = document.querySelector('#contactUsForm').cloneNode(true);
+            formClone.style.display = 'block';
+            return formClone;
+          },
+        });
+      });
+    });
+
+  </script>
+  
+
+
+
+</section>
+
+        
+
+<!--Footer-->
+<footer class=" bg-dark">
+    <div class="container text-center">
+        <div class="row justify-content-md-center ">
+            <div class="col  text-light pt-4">
+                <ul class="list-unstyled">
+                    <li > <small> ABOUT </small></li>
+                    <hr class="my-1">
+                    <li>
+                        <a href="#" class="text-light" style="text-decoration: none;">
+                            <small> Meet Lucky </small></a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-light" style="text-decoration: none;">
+                            <small> Privacy Disclosure </small> </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-light" style="text-decoration: none;">
+                            <small> FAQs </small></a>
+                    </li>
+                </ul>
+            </div>
+         
+            <div class="col-2 bg-muted mt-2">
+                <a href="#" class="btn btn-sm ">
+                    <img src="mp2images/logo.png" alt="logo" class="img-fluid" height="110" width="110">
+                </a>
+            </div>
+
+            <div class="col text-light pt-4">
+                <ul class="list-unstyled">
+                    <li class="float-bottom"><small> LET'S CONNECT </small></li>
+                    <hr class="my-1">
+                    <li>
+                        <a href="https://www.facebook.com/luckysbakedgoods" style="text-decoration: none;"  class="btn-floating btn-sm text-white" style="font-size: 15px;">
+                            <small><i class="bi bi-facebook"></i> &nbsp Facebook</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn-floating btn-sm text-white" style="text-decoration: none;"  class="btn-floating btn-sm text-white" style="font-size: 15px;">
+                            <small> <i class="bi bi-instagram"></i> &nbsp Instagram </small>
+                        </a>
+                    </li>
+                    <li class="text-secondary pt-2" style="font-size: smaller;">
+                        <a href="#" class="btn-floating btn-sm text-white" style="text-decoration: none;"  class="btn-floating btn-sm text-white" style="font-size: 15px;">
+                            Send Feedback  
+                       </a>
+                </ul>
+            </div>
+        </div>
+        
+        <p class="text-secondary pt-2 " style="font-size: smaller;">
+            <i class="bi bi-c-circle"></i>  &nbspAll rights reserved, 2023  </p>
+    </div>
+</footer>
+
+
+<!--JAVASCRIPT-->
+
+
+<script>
+
+const product = [
+    {
+        id: 0,
+        image: 'mp2images/carrotcake.jpg',
+        title: 'Carrot Cake',
+        price: 650,
+    },
+    {
+        id: 1,
+        image: 'mp2images/peachcake.jpg',
+        title: 'Peaches&Cream Cake',
+        price: 700,
+    },
+    {
+        id: 2,
+        image: 'mp2images/chococake.jpg',
+        title: 'Chocolate Cake',
+        price: 400,
+    },
+    {
+        id: 3,
+        image: 'mp2images/lemonmeringue.jpg',
+        title: 'Lemon Meringue Cake',
+        price: 680,
+    }
+
+];
+
+const categories = [...new Set(product.map((item)=>
+{return item}))]
+
+
+var orders = [];
+
+function addtocart(a){
+    orders.push({...categories[a]});
+    displayorders();
+}
+
+function delElement(a){
+    orders.splice(a,1);
+    displayorders();
+}
+
+
+function displayorders(a){
+    let j=0, total=0;
+
+
+    document.getElementById("quantity").innerHTML = orders.length;
+
+    if(orders.length==0){
+        document.getElementById('yourorders').innerHTML = "You have no orders";
+        document.getElementById("totalamount").innerHTML = "P "+0+".00";
+    }
+    else{
+        document.getElementById("yourorders").innerHTML = orders.map((items)=>
+        {
+            var {image, title, price} = items;
+            total += price;
+            document.getElementById("totalamount").innerHTML = "P "+total+".00";
+
+            return(
+                `<div class='cart-item'>
+                <div class='row-img'>
+                    <img class='rowimg' src=${image}>
+                    </div>
+                    <p style='font-size:12px;'>${title}</p>
+                    <h2 style='font-size:15px;'>P ${price}.00</h2>`+
+                    "<i class='fa-solid fa-trash' onclick='delElement("+(j++)+")'></i></div>"
+            );
+        }).join('');
+    }
+
+}
+
+
+
+</script>
+
+
+
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "100852973084013");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v17.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
